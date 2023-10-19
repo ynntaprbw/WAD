@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKN Bojonegoro</title>
+</head>
+<body>
+    <h1>JavaScript Can Change Images</h1>
+    <img id="myImage" onclick="changeImage()" src="https://motionarray.imgix.net/preview-366781-SucOpqoSyhMdoEq8-large.jpg?w=660&q=60&fit=max&auto=format" width="100" height="180">
+    <p>Click the Image to Change Image</p>
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("https://cdn3.vectorstock.com/i/1000x1000/43/07/light-bulb-on-black-vector-1094307")) {
+                image.src = "https://motionarray.imgix.net/preview-366781-SucOpqoSyhMdoEq8-large.jpg?w=660&q=60&fit=max&auto=format";
+            } else {
+                image.src = "https://cdn3.vectorstock.com/i/1000x1000/43/07/light-bulb-on-black-vector-1094307.jpg" ;
+            }
+        }
+    </script>
+</body>
+</html>
